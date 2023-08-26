@@ -1,4 +1,4 @@
-import 'package:ostadmoduleassignmentss/savignsAcoount.dart';
+import 'package:ostadmoduleassignmentss/savignsAndCurrent.dart';
 
 void main() {
   SavingsAccount saveaccount =
