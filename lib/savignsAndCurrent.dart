@@ -15,6 +15,7 @@ abstract class Account {
 class SavingsAccount extends Account { ///savings account inherits Account class
   double interestRate; ///additional property for savings Account
 
+  ///Constructor with named parameters
   SavingsAccount(
       {required int accountNumber, required double balance, required this.interestRate})
       : super(accountNumber, balance); ///there is a super keyword means this is inheriting from account class
@@ -45,6 +46,7 @@ class SavingsAccount extends Account { ///savings account inherits Account class
 class CurrentAccount extends Account {
   ///overdraft limit set for current account
   double overdraftLimit = 0;
+  ///Constructor with named parameters
 
   CurrentAccount(
       {required int accountNumber, required double balance, required this.overdraftLimit})
