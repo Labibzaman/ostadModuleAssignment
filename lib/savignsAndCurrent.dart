@@ -22,6 +22,7 @@ class SavingsAccount extends Account { ///savings account inherits Account class
 
   @override ///deposit method
   void deposit(double amount) {
+    ///balance= balance + amount short is balance += amount
     balance += amount;
     print('Succesfully deposited $amount');
   }
@@ -63,7 +64,7 @@ class CurrentAccount extends Account {
     double totalLimit = balance + overdraftLimit; /// stored the total limit
 
     if (amount <= totalLimit) {
-      balance -= amount;
+      balance -= amount; ///balance= balance -amount short is balance-=amount
       print('Withdrawal of $amount is successful');
     } else {
       print("Insufficient balance");
