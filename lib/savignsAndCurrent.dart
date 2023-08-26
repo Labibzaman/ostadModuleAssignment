@@ -3,7 +3,7 @@ abstract class Account {
   int accountNumber;
   double balance = 0;
 
-  Account(this.accountNumber, this.balance);
+  Account(this.accountNumber, this.balance);/// constructor of account class
 
   void deposit(double amount) {
     balance += amount;
